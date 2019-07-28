@@ -4,21 +4,6 @@ import SpacingGrid from './components/grid/Grid';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
-// import getMuiTheme from 'material-ui/styles/getMuiTheme';
-// import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-// import {darkBaseTheme} from 'material-ui/styles/baseThemes/darkBaseTheme';
-// import * as Colors from 'material-ui/styles/colors';
-// import { fade } from 'material-ui/utils/colorManipulator'
-
-// const getTheme = () => {
-//   let overwrites = {
-//     "palette": {
-//         "primary1Color": "#1e88e5"
-//     }
-// };
-//   return getMuiTheme(darkBaseTheme, overwrites);
-// }
-
 
 
 class App extends React.Component {
@@ -54,6 +39,7 @@ class App extends React.Component {
               <SpacingGrid updateCount={this.updateCount} ></SpacingGrid>
             </Grid>
           </Grid>
+          
         </div>
     );
   }

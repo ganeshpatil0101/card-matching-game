@@ -3,7 +3,6 @@ import './Card-style.js';
 import Paper from '@material-ui/core/Paper';
 import Icon from '@material-ui/core/Icon';
 import Style from './Card-style';
-import {Animated} from "react-animated-css";
 class Card extends React.Component {
   constructor(props) {
       super(props);
