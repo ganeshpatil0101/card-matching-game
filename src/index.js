@@ -7,6 +7,7 @@ import {MuiThemeProvider, createMuiTheme} from '@material-ui/core';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import wrapper from './components/LCH/wrapper';
+import HigherOrderComponents from './components/hoc/Hoc';
 const theme = createMuiTheme({
     palette:{
         type:'dark'
@@ -18,12 +19,16 @@ ReactDOM.render(
             {/* <App /> */}
                 <Route exact path="/" component={App} />
                 <Route path="/LF" component={wrapper} />
+                <Route path="/hoc" component={HigherOrderComponents} />
             <ul>
                 <li>
                 <Link to="/">Game</Link>
                 </li>
                 <li>
                 <Link to="/LF">LifeCycleHooks</Link>
+                </li>
+                <li>
+                <Link to="/hoc">HigherOrderComponents</Link>
                 </li>
             </ul>
         </MuiThemeProvider>

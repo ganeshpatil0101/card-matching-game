@@ -26,12 +26,10 @@ class Card extends React.Component {
       }
     }
     render() {
-    let icon, className;
+    let icon;
     if (this.state.isToggleOn) {
-      className = 'active-border';
       icon =<Icon style={{ fontSize: 50, color:'#05f1dd' }}>{this.state.iconName}</Icon>   
     } else {
-      className = '';
       icon = null;
     }
       return (
